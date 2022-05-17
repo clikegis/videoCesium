@@ -5,6 +5,14 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+
+//引入cesium相关文件
+var cesium = require('cesium/Cesium');
+var widgets= require('cesium/Widgets/widgets.css');
+
+Vue.prototype.Cesium = cesium;
+Vue.prototype.widgets = widgets;
+
 new Vue({
   router,
   store,
